@@ -6,11 +6,11 @@
 }
 
 body{
-    /* background: linear-gradient(to bottom right, rgb(204, 202, 202), gray); */
     background: rgba(75, 74, 74, 0.927);
 }
 
-h2, h3{
+h2,
+h3{
     text-transform: uppercase;
 }
 
@@ -88,10 +88,7 @@ h3{
     font-weight: normal;
 }
 
-.container__informacion--size div{
-    display: flex;
-}
-
+.container__informacion--size div,
 .container__informacion--color div{
     display: flex;
 }
@@ -149,6 +146,7 @@ h3{
     height: 25px;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 12rem;
     color: white;
     padding: 30px 25px;
