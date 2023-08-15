@@ -14,7 +14,8 @@ h3{
     text-transform: uppercase;
 }
 
-h3{
+h3,
+p{
     padding-bottom: 5px;
 }
 
@@ -46,7 +47,6 @@ h3{
 .container__cabecera p{
     width: 180px;
     padding: 10px 0;
-    padding-right: 10px;
 }
 
 .container__cabecera--zapatilla{
@@ -86,6 +86,15 @@ h3{
     border-radius: 8px;
     font-size: 12px;
     font-weight: normal;
+    transition: background-color 0.3s;
+}
+
+.container__informacion--marca div i{
+    color: gray;
+    cursor: pointer;
+}
+.container__informacion--marca div i.active{
+    color: gold;
 }
 
 .container__informacion--size div,
@@ -111,11 +120,23 @@ h3{
     color: white;
 }
 
+.container__informacion--size .fondo-orange:hover{
+    background-color: orange;
+}
+
+.container__informacion--size .fondo-black:hover{
+    background-color: black;
+}
+
+.container__informacion--size .fondo-red:hover{
+    background-color: red;
+}
+
 .container__informacion--color .border-orange:hover{
     border-color: orange;
 }
 
-.container__informacion--color .border-black:hover{
+.container__informacion--colo .border-black:hover{
     border-color: black;
 }
 
@@ -129,15 +150,18 @@ h3{
     height: 25px;
     border-radius: 50%;
     content: "";
+    cursor: pointer;
 }
 
-.orange{
+.container__informacion--color span .orange{
     background: orange;
 }
-.black{
+
+.container__informacion--color span .black{
     background: black;
 }
-.red{
+
+.container__informacion--color span .red{
     background: red;
 }
 
@@ -155,6 +179,7 @@ h3{
     font-size: 20px;
     position: absolute;
     right: 80px;
+    transition: background-color 0.3s;
 }
 
 @media (max-width: 450px) {
