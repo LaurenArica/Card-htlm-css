@@ -1,4 +1,4 @@
-const stars = document.querySelectorAll('.start');
+const stars = document.querySelectorAll('.star');
 
 let rating = 0;
 
